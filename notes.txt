@@ -1,0 +1,101 @@
+normalement je fais un appelle de cette fonction :acc_example_detector_distance(0,NULL);
+dans le main et elle focntionne comme un main elle meme 
+maintenant lorsque j'appelle cette fonction dans ma tache2 void Start_tache2(void *argument)
+{
+  /* USER CODE BEGIN Start_tache2 */
+  /* Infinite loop */
+  for(;;)
+  {
+	  acc_example_detector_distance(0,NULL);
+  }
+  // In case we accidentally exit from task loop
+  	osThreadTerminate(NULL);
+  /* USER CODE END Start_tache2 */
+} 
+meme si en mode coopératif le fonctionement est bizzare je ne peux jamais sortire de cette tache parceque la fonction   acc_example_detector_distance(0,NULL); fait du polling ecrit moi une tache2 qui donne la distance en evitant  tout c'est soucis 
+
+
+Si la fonction `acc_example_detector_distance(0, NULL)` fonctionne en mode bloquant et effectue du polling, il est nécessaire de restructurer votre tâche pour éviter de bloquer tout le système d'exploitation. Vous pouvez adopter une approche basée sur les notifications ou les événements pour rendre cette tâche plus coopérative et non-bloquante. Voici une suggestion de structure pour votre tâche :
+
+### 1. Diviser le Traitement
+Si possible, divisez le traitement de la fonction `acc_example_detector_distance` en plusieurs parties plus petites qui peuvent être exécutées de manière incrémentale. Cela permettrait à la tâche de libérer le processeur pour d'autres tâches entre les étapes.
+
+### 2. Utiliser des Notifications ou des Interruptions
+Si la fonction `acc_example_detector_distance` est liée à des événements de matériel (comme la réception de données d'un capteur), envisagez d'utiliser des interruptions ou des notifications pour réveiller la tâche lorsque les données sont disponibles, plutôt que de faire du polling actif.
+
+### 3. Tâche avec Notification
+Voici un exemple de comment vous pourriez structurer votre tâche pour utiliser une notification pour gérer l'exécution de la fonction `acc_example_detector_distance` sans bloquer:
+
+```c
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "freertos/semphr.h"
+
+SemaphoreHandle_t xSemaphore = NULL;
+
+void sensorDataReadyInterruptHandler() {
+    // Appelée par l'interruption lorsque les données du capteur sont prêtes
+    xSemaphoreGiveFromISR(xSemaphore, NULL);
+}
+
+void Start_tache2(void *argument) {
+    xSemaphore = xSemaphoreCreateBinary();
+
+    // Configuration de l'interruption ou d'un autre mécanisme pour recevoir les données
+    setupSensorInterrupt(sensorDataReadyInterruptHandler);
+
+    for (;;) {
+        if (xSemaphoreTake(xSemaphore, portMAX_DELAY) == pdTRUE) {
+            acc_example_detector_distance(0, NULL); // Appel de la fonction lorsque les données sont prêtes
+        }
+
+        // Faire d'autres traitements si nécessaire
+        taskYIELD(); // Cède volontairement le contrôle à d'autres tâches
+    }
+
+    osThreadTerminate(NULL); // Sécurité en cas de sortie de la boucle
+}
+```
+
+### Points Clés:
+- **Semaphore**: Utilisez un sémaphore pour attendre un événement (comme des données prêtes à être traitées). Cela évite le polling actif.
+- **Interruptions**: Configurez une interruption pour signaler quand les données sont prêtes, utilisant `xSemaphoreGiveFromISR` pour réveiller la tâche.
+- **taskYIELD()**: Utilise cette fonction pour permettre à d'autres tâches de s'exécuter, améliorant ainsi la coopération entre les tâches.
+
+Assurez-vous que les autres parties de votre système sont configurées pour supporter ce mode de fonctionnement, notamment en vérifiant que les interruptions et les sémaphores sont correctement gérés.
+
+- Implementation et integration.
+- Creer les ressources
+-Set config
+-Initialiser les ressources
+-(Optional) Print les configs
+-Allumer le radar
+- Faire les calibrations .
+- Initier la var ou on stock les résultats
+- Récuperer les résultats
+- Si besoins d'une  calibration 
+	-Faire une nouvelle calib
+- (Optional) Print les résultats
+
+fais moi un diagramme comme celui que je t'avais fournie  ou la tache principale fais ca mais comme je t'avais dit avant il faut je récupère les distance : 
+
+- Implementation et integration.
+- Creer les ressources
+-Set config
+-Initialiser les ressources
+-(Optional) Print les configs
+-Allumer le radar
+- Faire les calibrations .
+- Initier la var ou on stock les résultats
+- Récuperer les résultats
+- Si besoins d'une  calibration 
+	-Faire une nouvelle calib
+- (Optional) Print les résultats
+
+
+
+Mes ressources partager sont les suits : 
+-sensor_id 
+-SPI_BUS_tx and RX 
+-uart TX  genre dans int _write HAL_UART_Transmit (&huart3 , ( uint8_t *) ptr , len , 0xFFFF ) ;
+ajoute des ressources si tu vois t'en a besoins 
