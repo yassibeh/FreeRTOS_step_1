@@ -1,0 +1,7 @@
+../Drivers/MeSN/UART/mesn_uart.c:93:6:MESN_UART_Init	48	static
+../Drivers/MeSN/UART/mesn_uart.c:159:6:MESN_UART_PutString_Poll	24	static
+../Drivers/MeSN/UART/mesn_uart.c:174:6:MESN_UART_GetString	24	static
+../Drivers/MeSN/UART/mesn_uart.c:192:13:MESN_PRIV_UART_IRQHandler	16	static
+../Drivers/MeSN/UART/mesn_uart.c:229:8:USART2_IRQHandler	8	static
+../Drivers/MeSN/UART/mesn_uart.c:240:13:MESN_PRIV_UART_PutChar_Poll	16	static
+../Drivers/MeSN/UART/mesn_uart.c:253:16:MESN_PRIV_UART_GetChar	16	static

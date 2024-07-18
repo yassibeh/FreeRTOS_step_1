@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Middlewares/Third_Party/TraceRecorder/trcKernelPort.c \
+../Middlewares/Third_Party/TraceRecorder/trcSnapshotRecorder.c \
+../Middlewares/Third_Party/TraceRecorder/trcStreamingRecorder.c 
+
+OBJS += \
+./Middlewares/Third_Party/TraceRecorder/trcKernelPort.o \
+./Middlewares/Third_Party/TraceRecorder/trcSnapshotRecorder.o \
+./Middlewares/Third_Party/TraceRecorder/trcStreamingRecorder.o 
+
+C_DEPS += \
+./Middlewares/Third_Party/TraceRecorder/trcKernelPort.d \
+./Middlewares/Third_Party/TraceRecorder/trcSnapshotRecorder.d \
+./Middlewares/Third_Party/TraceRecorder/trcStreamingRecorder.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Middlewares/Third_Party/TraceRecorder/%.o Middlewares/Third_Party/TraceRecorder/%.su: ../Middlewares/Third_Party/TraceRecorder/%.c Middlewares/Third_Party/TraceRecorder/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/MeSN/UART -I../Middlewares/Third_Party/TraceRecorder/config -I../Middlewares/Third_Party/TraceRecorder/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+
+clean: clean-Middlewares-2f-Third_Party-2f-TraceRecorder
+
+clean-Middlewares-2f-Third_Party-2f-TraceRecorder:
+	-$(RM) ./Middlewares/Third_Party/TraceRecorder/trcKernelPort.d ./Middlewares/Third_Party/TraceRecorder/trcKernelPort.o ./Middlewares/Third_Party/TraceRecorder/trcKernelPort.su ./Middlewares/Third_Party/TraceRecorder/trcSnapshotRecorder.d ./Middlewares/Third_Party/TraceRecorder/trcSnapshotRecorder.o ./Middlewares/Third_Party/TraceRecorder/trcSnapshotRecorder.su ./Middlewares/Third_Party/TraceRecorder/trcStreamingRecorder.d ./Middlewares/Third_Party/TraceRecorder/trcStreamingRecorder.o ./Middlewares/Third_Party/TraceRecorder/trcStreamingRecorder.su
+
+.PHONY: clean-Middlewares-2f-Third_Party-2f-TraceRecorder
+

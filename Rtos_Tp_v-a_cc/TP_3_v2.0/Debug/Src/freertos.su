@@ -1,0 +1,5 @@
+../Src/freertos.c:72:6:MX_FREERTOS_Init	80	static
+../Src/freertos.c:113:6:task1Fn	24	static
+../Src/freertos.c:133:6:task2Fn	16	static
+../Src/freertos.c:146:6:task3Fn	16	static
+../Src/freertos.c:157:6:vApplicationStackOverflowHook	16	static
