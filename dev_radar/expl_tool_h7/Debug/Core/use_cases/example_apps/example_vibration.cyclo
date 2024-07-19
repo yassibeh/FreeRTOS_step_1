@@ -1,0 +1,17 @@
+../Core/use_cases/example_apps/example_vibration.c:224:5:acc_example_vibration	10
+../Core/use_cases/example_apps/example_vibration.c:323:13:set_config	1
+../Core/use_cases/example_apps/example_vibration.c:357:13:validate_config	7
+../Core/use_cases/example_apps/example_vibration.c:396:13:init_sensor_resources	5
+../Core/use_cases/example_apps/example_vibration.c:432:13:init_app_resources	10
+../Core/use_cases/example_apps/example_vibration.c:524:13:setup_sample_frequencies	1
+../Core/use_cases/example_apps/example_vibration.c:532:13:do_sensor_calibration_and_prepare	8
+../Core/use_cases/example_apps/example_vibration.c:579:13:do_sensor_measurement	4
+../Core/use_cases/example_apps/example_vibration.c:608:13:process	7
+../Core/use_cases/example_apps/example_vibration.c:692:13:update_vibration_result	5
+../Core/use_cases/example_apps/example_vibration.c:732:13:roll_and_update_time_series	2
+../Core/use_cases/example_apps/example_vibration.c:748:13:calculate_threshold	5
+../Core/use_cases/example_apps/example_vibration.c:818:15:get_zero_mean_time_series	3
+../Core/use_cases/example_apps/example_vibration.c:838:14:calculate_time_series_std	2
+../Core/use_cases/example_apps/example_vibration.c:854:13:setup_rfft_bounds	3
+../Core/use_cases/example_apps/example_vibration.c:875:13:print_result	21
+../Core/use_cases/example_apps/example_vibration.c:907:13:cleanup	12

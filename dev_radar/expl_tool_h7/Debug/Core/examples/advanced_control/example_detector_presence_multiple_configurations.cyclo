@@ -1,0 +1,3 @@
+../Core/examples/advanced_control/example_detector_presence_multiple_configurations.c:72:5:acc_example_detector_presence_multiple_configurations	21
+../Core/examples/advanced_control/example_detector_presence_multiple_configurations.c:262:13:cleanup	6
+../Core/examples/advanced_control/example_detector_presence_multiple_configurations.c:298:13:print_result	4

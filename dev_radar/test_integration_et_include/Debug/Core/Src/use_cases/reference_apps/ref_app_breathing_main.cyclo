@@ -1,0 +1,8 @@
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:61:5:acc_ref_app_breathing_main	13
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:180:13:cleanup	4
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:204:13:set_config	5
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:225:13:sensor_calibration	8
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:265:13:measure	4
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:292:13:print_app_state	5
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:316:13:print_result	3
+../Core/Src/use_cases/reference_apps/ref_app_breathing_main.c:330:13:handle_indications	6

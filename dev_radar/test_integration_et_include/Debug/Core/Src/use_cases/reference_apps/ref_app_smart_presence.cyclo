@@ -1,0 +1,17 @@
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:228:5:acc_ref_app_smart_presence	18
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:382:13:swap_config	8
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:440:17:get_max_buffer_size	3
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:456:17:get_max_num_points	3
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:472:17:get_max_num_zones	3
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:488:13:initialize_wakeup_resources	4
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:516:13:initialize_application_resources	11
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:618:13:cleanup	11
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:675:13:initialize_sensor	2
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:688:13:sensor_prepare	2
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:707:13:sensor_calibration	8
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:748:13:detector_get_next	5
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:779:13:set_config	7
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:1078:16:process_inter_intra	16
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:1199:13:process_detector_result	8
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:1266:13:determine_config_swap	13
+../Core/Src/use_cases/reference_apps/ref_app_smart_presence.c:1325:13:print_result	10

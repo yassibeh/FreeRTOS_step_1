@@ -1,0 +1,2 @@
+../Core/examples/troubleshooting/example_diagnostic_test.c:42:5:acc_example_diagnostic_test	10
+../Core/examples/troubleshooting/example_diagnostic_test.c:132:6:hal_test_spi_read_chipid	3

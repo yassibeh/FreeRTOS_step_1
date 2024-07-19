@@ -1,0 +1,11 @@
+../Core/application/acc_exploration_server_stm32.c:41:13:uart_wait_for_tx_done	2
+../Core/application/acc_exploration_server_stm32.c:68:13:write_to_client	2
+../Core/application/acc_exploration_server_stm32.c:92:13:restart_input	1
+../Core/application/acc_exploration_server_stm32.c:106:13:set_baudrate	2
+../Core/application/acc_exploration_server_stm32.c:123:17:get_tick	1
+../Core/application/acc_exploration_server_stm32.c:142:6:acc_exploration_server_stm32_init	1
+../Core/application/acc_exploration_server_stm32.c:150:6:acc_exploration_server_stm32_main	7
+../Core/application/acc_exploration_server_stm32.c:200:6:HAL_UART_ErrorCallback	3
+../Core/application/acc_exploration_server_stm32.c:213:6:HAL_UART_TxCpltCallback	2
+../Core/application/acc_exploration_server_stm32.c:222:6:acc_integration_log	2
+../Core/application/acc_exploration_server_stm32.c:247:5:acconeer_main	3

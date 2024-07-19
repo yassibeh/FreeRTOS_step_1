@@ -1,0 +1,9 @@
+../Core/examples/getting_started/example_detector_distance.c:109:5:acc_example_detector_distance	352	static
+../Core/examples/getting_started/example_detector_distance.c:219:13:cleanup	16	static
+../Core/examples/getting_started/example_detector_distance.c:237:13:set_config	16	static
+../Core/examples/getting_started/example_detector_distance.c:275:13:initialize_detector_resources	16	static
+../Core/examples/getting_started/example_detector_distance.c:308:13:do_sensor_calibration	40	static
+../Core/examples/getting_started/example_detector_distance.c:346:13:do_full_detector_calibration	72	static
+../Core/examples/getting_started/example_detector_distance.c:374:13:do_detector_calibration_update	48	static
+../Core/examples/getting_started/example_detector_distance.c:400:13:do_detector_get_next	48	static
+../Core/examples/getting_started/example_detector_distance.c:446:13:print_distance_result	24	static

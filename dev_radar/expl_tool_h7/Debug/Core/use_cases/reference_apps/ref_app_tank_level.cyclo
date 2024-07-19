@@ -1,0 +1,14 @@
+../Core/use_cases/reference_apps/ref_app_tank_level.c:207:5:acc_ref_app_tank_level	13
+../Core/use_cases/reference_apps/ref_app_tank_level.c:336:13:cleanup	2
+../Core/use_cases/reference_apps/ref_app_tank_level.c:356:14:get_detector_start_m	1
+../Core/use_cases/reference_apps/ref_app_tank_level.c:363:14:get_detector_end_m	1
+../Core/use_cases/reference_apps/ref_app_tank_level.c:370:13:set_config	5
+../Core/use_cases/reference_apps/ref_app_tank_level.c:434:13:initialize_application_resources	7
+../Core/use_cases/reference_apps/ref_app_tank_level.c:490:13:sensor_calibration	8
+../Core/use_cases/reference_apps/ref_app_tank_level.c:533:13:full_detector_calibration	4
+../Core/use_cases/reference_apps/ref_app_tank_level.c:565:13:update_detector_calibration	4
+../Core/use_cases/reference_apps/ref_app_tank_level.c:595:13:detector_get_next	7
+../Core/use_cases/reference_apps/ref_app_tank_level.c:642:14:median	5
+../Core/use_cases/reference_apps/ref_app_tank_level.c:665:14:nanmean	4
+../Core/use_cases/reference_apps/ref_app_tank_level.c:683:13:process_detector_result	12
+../Core/use_cases/reference_apps/ref_app_tank_level.c:761:13:print_result	13

@@ -1,0 +1,4 @@
+../Core/Src/examples/advanced_control/example_service_sensor_hibernate.c:61:5:acc_example_service_sensor_hibernate	21
+../Core/Src/examples/advanced_control/example_service_sensor_hibernate.c:243:13:cleanup	5
+../Core/Src/examples/advanced_control/example_service_sensor_hibernate.c:271:13:print_data	4
+../Core/Src/examples/advanced_control/example_service_sensor_hibernate.c:292:13:set_config	1

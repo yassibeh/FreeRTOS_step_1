@@ -1,0 +1,17 @@
+../Core/Src/use_cases/example_apps/example_waste_level.c:152:27:waste_level_app_config_create	16	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:172:6:waste_level_app_config_destroy	16	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:186:6:waste_level_app_config_set_preset	24	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:225:23:waste_level_handle_create	32	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:266:6:waste_level_handle_destroy	16	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:285:6:waste_level_process	112	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:372:6:waste_level_processing_config_log	16	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:383:13:validate_app_config	32	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:465:13:subsweep_start_points_strictly_increases	32	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:487:13:has_overlapping_subsweeps	32	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:509:13:is_outside_measuring_interval	40	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:536:14:subsweep_approx_start_m	24	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:545:14:subsweep_approx_end_m	24	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:554:14:point_in_sweep_to_distance_m	48	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:580:13:write_to_ring_buffer	32	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:593:17:copy_non_nan_floats	32	static
+../Core/Src/use_cases/example_apps/example_waste_level.c:610:13:set_level_numbers	48	static

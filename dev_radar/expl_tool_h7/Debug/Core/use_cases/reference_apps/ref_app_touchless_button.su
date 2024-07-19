@@ -1,0 +1,17 @@
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:216:5:acc_ref_app_touchless_button	192	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:337:13:cleanup	16	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:414:13:set_config	16	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:495:13:validate_config	32	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:536:13:config_log	48	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:585:13:init_handle	32	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:660:14:get_threshold	16	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:666:13:reset_background	24	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:680:13:init_sensor	16	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:701:13:do_sensor_calibration_and_prepare	232	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:739:13:measure	16	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:768:13:calc_variance	136	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:828:13:check_count	24	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:844:13:update_background	48	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:859:13:get_detection	24	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:868:13:process	48	static
+../Core/use_cases/reference_apps/ref_app_touchless_button.c:983:13:print_result	16	static

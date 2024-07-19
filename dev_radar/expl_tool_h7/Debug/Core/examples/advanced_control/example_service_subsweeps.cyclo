@@ -1,0 +1,3 @@
+../Core/examples/advanced_control/example_service_subsweeps.c:56:5:acc_example_service_subsweeps	19
+../Core/examples/advanced_control/example_service_subsweeps.c:232:13:cleanup	5
+../Core/examples/advanced_control/example_service_subsweeps.c:260:13:print_data	4

@@ -1,0 +1,4 @@
+../Core/examples/advanced_control/example_service_sensor_disable.c:61:5:acc_example_service_sensor_disable	17
+../Core/examples/advanced_control/example_service_sensor_disable.c:206:13:cleanup	5
+../Core/examples/advanced_control/example_service_sensor_disable.c:234:13:print_data	4
+../Core/examples/advanced_control/example_service_sensor_disable.c:255:13:set_config	1

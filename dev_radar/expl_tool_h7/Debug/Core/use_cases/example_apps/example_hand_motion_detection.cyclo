@@ -1,0 +1,15 @@
+../Core/use_cases/example_apps/example_hand_motion_detection.c:69:33:hand_motion_detection_config_create	3
+../Core/use_cases/example_apps/example_hand_motion_detection.c:88:6:hand_motion_detection_config_destroy	3
+../Core/use_cases/example_apps/example_hand_motion_detection.c:102:6:hand_motion_detection_set_config	3
+../Core/use_cases/example_apps/example_hand_motion_detection.c:144:33:hand_motion_detection_handle_create	8
+../Core/use_cases/example_apps/example_hand_motion_detection.c:210:6:hand_motion_detection_handle_destroy	7
+../Core/use_cases/example_apps/example_hand_motion_detection.c:244:6:hand_motion_detection_config_log	40
+../Core/use_cases/example_apps/example_hand_motion_detection.c:276:6:hand_motion_detection_get_buffer_size	4
+../Core/use_cases/example_apps/example_hand_motion_detection.c:304:6:hand_motion_detection_prepare	4
+../Core/use_cases/example_apps/example_hand_motion_detection.c:329:6:hand_motion_detection_process	2
+../Core/use_cases/example_apps/example_hand_motion_detection.c:364:13:reinit_hand_motion_detection_state	1
+../Core/use_cases/example_apps/example_hand_motion_detection.c:372:13:set_sensor_config	3
+../Core/use_cases/example_apps/example_hand_motion_detection.c:425:13:set_processing_config	1
+../Core/use_cases/example_apps/example_hand_motion_detection.c:446:48:process_presence_processing_result	5
+../Core/use_cases/example_apps/example_hand_motion_detection.c:470:13:determine_app_mode	7
+../Core/use_cases/example_apps/example_hand_motion_detection.c:507:13:swap_app_mode	2

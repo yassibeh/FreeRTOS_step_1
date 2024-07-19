@@ -1,0 +1,10 @@
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:116:5:acc_example_detector_distance_with_iq_data_print	352	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:226:13:cleanup	16	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:244:13:set_config	16	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:282:13:initialize_detector_resources	16	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:315:13:do_sensor_calibration	40	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:353:13:do_full_detector_calibration	72	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:381:13:do_detector_calibration_update	48	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:407:13:do_detector_get_next	48	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:459:13:print_iq_data	88	static
+../Core/examples/advanced_control/example_detector_distance_with_iq_data_print.c:532:13:print_distance_result	24	static
