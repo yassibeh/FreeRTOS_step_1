@@ -1,0 +1,41 @@
+1er solution : OS coopératif afin d'économiser le CPU
+
+Avantages :
+•	Seulement 2 tâches applicatives → économie de RAM.
+***************************************************************
+Inconvénients :
+•	S'appuie d'avantage sur les périphériques → réduit la portabilité.
+•	L'analyse des interdépendances afin d'identifier les différents modules est complexe (limite l'intérêt de l'OS).
+•	L'implémentation risque fort de ne plus être valable si l'application s'étoffe 
+
+***************************************************************
+Remarques :
+•	La surconsommation CPU liée aux commutations de contexte est réduite au minimum. Cependant, il est plus compliqué d'utiliser le mode sleep dans la tâche IDLE, réduisant l'autonomie .
+•	Le code s'appuie que partiellement sur les outils de l'OS. Une grande attention doit donc être apportée au niveau du code de l'application vis-à-vis des temps d'exécution.
+
+
+Conclusions :
+•	Implémentation acceptable pour notre application. 
+
+
+
+
+Utilisation de Callback01 (Timer RTOS)
+Avantages :
+•	Simplicité : Facile à configurer et à utiliser avec CMSIS-FreeRTOS.
+•	Abstraction : Gère les détails du timing et des interruptions, simplifiant le développement.
+•	Intégration RTOS : Intégré proprement avec le reste des fonctionnalités RTOS, comme les tâches et les sémaphores.
+
+***************************************************************************************************************
+Utilisation de vTimerISR (ISR matériel)
+Avantages :
+•	Précision : Peut offrir une meilleure précision en manipulant directement le matériel.
+•	Performance : Réagit plus rapidement aux événements car il fonctionne au niveau de l'interruption matérielle.
+•	Contrôle : Permet un contrôle plus fin des timings et des interactions directes avec le matériel.
+
+
+***************************************************************************************************************
+Conclusion :
+Soit 
+•	Utilisez Callback01 pour la simplicité et une intégration facile avec FreeRTOS.
+•	Utilisez vTimerISR pour des besoins de haute précision et de performance.

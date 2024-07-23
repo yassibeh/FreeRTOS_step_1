@@ -1,0 +1,22 @@
+
+2nde solution : OS préemptif tel que 1 fonctionnalité = 1 tâche
+
+Avantages :
+•	Le temps CPU est automatiquement alloué au besoin le plus urgent.
+•	Le design « event driven » assure que le CPU ne gaspille pas du temps en pooling d'événements.
+•	Simple à construire.
+
+
+Inconvénients :
+•	Requiert un grand nombre de tâches (2 au total). Chacune nécessitant sa propre stack → Nécessite beaucoup de RAM.
+
+
+Remarques :
+•	La tâche IDLE place le CPU en mode « économie d'énergie ». Cependant, une partie de l'énergie sera perdue si l'IRQ du SysTick réveille le CPU pour rien.
+
+•	Le kernel utilise des ressources CPU. Le gâchis étant dépendant de la fréquence du SysTick.
+
+Conclusions :
+•	Implémentation acceptable si les ressources (RAM, ROM, CPU) le permettent.
+•	Il faut faire attention lors du partitionnement de l'application en « fonctionnalités » distinctes.
+•	Un soin particulier doit être apporté dans l'affectation des priorités de chaque tâche.

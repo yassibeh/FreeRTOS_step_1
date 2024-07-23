@@ -1,0 +1,19 @@
+Utilisation de Callback01 (Timer RTOS)
+Avantages :
+•	Simplicité : Facile à configurer et à utiliser avec CMSIS-FreeRTOS.
+•	Abstraction : Gère les détails du timing et des interruptions, simplifiant le développement.
+•	Intégration RTOS : Intégré proprement avec le reste des fonctionnalités RTOS, comme les tâches et les sémaphores.
+
+***************************************************************************************************************
+Utilisation de vTimerISR (ISR matériel)
+Avantages :
+•	Précision : Peut offrir une meilleure précision en manipulant directement le matériel.
+•	Performance : Réagit plus rapidement aux événements car il fonctionne au niveau de l'interruption matérielle.
+•	Contrôle : Permet un contrôle plus fin des timings et des interactions directes avec le matériel.
+
+
+***************************************************************************************************************
+Conclusion :
+Soit 
+•	Utilisez Callback01 pour la simplicité et une intégration facile avec FreeRTOS.
+•	Utilisez vTimerISR pour des besoins de haute précision et de performance.

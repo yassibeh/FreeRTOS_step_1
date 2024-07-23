@@ -1,0 +1,20 @@
+
+3ème solution : OS préemptif afin d'économiser la RAM
+
+Avantages :
+•	Le temps CPU est automatiquement alloué au besoin le plus urgent.
+•	Seulement 1 tâches applicatives → économie de RAM. 
+
+Inconvénients :
+•	L'implémentation risque de ne plus être valable si l'application s'étoffe → évolutivité réduite.
+
+
+
+Remarques :
+•	Implémentation simple mais les temps d'exécutions pas garantis. 
+
+•	La tâche IDLE place le CPU en mode « économie d'énergie ». Cependant, une partie de l'énergie sera perdue si l'IRQ du SysTick réveille le CPU pour rien.
+•	Le kernel utilise des ressources CPU. Le gâchis étant dépendant de la fréquence du SysTick.
+Conclusions :
+•	Implémentation acceptable sur un système limité en RAM.
+•	Attention aux risques de surcroît de gestion si l'application s'étoffe.

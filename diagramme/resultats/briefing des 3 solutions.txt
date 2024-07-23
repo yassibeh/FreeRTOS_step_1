@@ -1,0 +1,22 @@
+
+1er solution : OS coopératif afin d'économiser le CPU
+Avantages :
+-->	Seulement 2 tâches applicatives .
+-->	Le code s'appuie que partiellement sur les outils de l'OS. Une grande attention doit donc être apportée au niveau du 	code de l'application vis-à-vis des temps d'exécution.
+
+
+2ème solution : OS préemptif tel que 1 fonctionnalité = 1 tâche :
+Avantages :
+-->	Le temps CPU est automatiquement alloué au besoin le plus urgent.
+-->     Requiert un grand nombre de tâches (2 au total). Chacune nécessitant sa propre stack → Nécessite beaucoup de RAM.
+
+
+3ème solution : OS préemptif afin d'économiser la RAM :
+Avantages :
+-->	Le temps CPU est automatiquement alloué au besoin le plus urgent.
+-->	Seulement 1 tâches applicatives → économie de RAM. 
+-->	Implémentation simple mais les temps d'exécutions pas garantis. 
+-->	Implémentation acceptable sur un système limité en RAM.
+
+
+
