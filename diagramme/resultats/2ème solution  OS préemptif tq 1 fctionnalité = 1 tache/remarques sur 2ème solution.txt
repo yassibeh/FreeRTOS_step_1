@@ -1,5 +1,5 @@
 
-2nde solution : OS préemptif tel que 1 fonctionnalité = 1 tâche
+2ème solution : OS préemptif tel que 1 fonctionnalité = 1 tâche
 
 Avantages :
 •	Le temps CPU est automatiquement alloué au besoin le plus urgent.
