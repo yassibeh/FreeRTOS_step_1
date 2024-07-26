@@ -1,0 +1,6 @@
+imagine i have task1 that first   printf("I am task 1"); do_algo_1 wich is adding  Numbers 1 to 50 ;in the end printf the results 
+
+and task 2  that first   printf("I am task 2"); do_algo_2 wich is multipliying  Numbers 1 to 15 ;in the end printf the results 
+
+
+now i want you to give me a diagram where you a task that handles all displays 
