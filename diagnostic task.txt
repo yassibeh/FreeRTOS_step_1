@@ -1,0 +1,32 @@
+void Start_tache_diagnostic(void *argument)
+{
+  /* USER CODE BEGIN 5 */
+
+  /* Infinite loop */
+  for(;;)
+  {
+	  for(radar_id = 1 ; radar_id <= NB_RADAR_AVAILABLE ;radar_id++ ){
+		  const acc_hal_a121_t * hal = acc_hal_rss_integration_get_implementation() ;
+		  uint8_t buffer [6] = {0x30 , 0x0 , 0x0 , 0x0 , 0x0 , 0x0 };
+		  acc_hal_integration_sensor_supply_on( radar_id ) ;
+		  acc_hal_integration_sensor_enable ( radar_id ) ;
+		  hal -> transfer( radar_id , buffer , sizeof( buffer ) ) ;
+		  acc_hal_integration_sensor_disable( radar_id) ;
+		  acc_hal_integration_sensor_supply_off( radar_id ) ;
+		  if ( buffer [4] == 0x12 && buffer [5] == 0x10 )
+		  {
+			  printf("Test OK ! for the radar number %ld \n", radar_id );
+		  }else{
+			  printf("Cannot read chip id number %ld !\n", radar_id);
+		  }
+	  }
+
+  }
+
+
+  // In case we accidentally exit from task loop
+  	osThreadTerminate(NULL);
+
+
+  /* USER CODE END 5 */
+}
